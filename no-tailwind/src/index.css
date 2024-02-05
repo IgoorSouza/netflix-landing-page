@@ -1,0 +1,446 @@
+/* Geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #e50914;
+  transition: 0.2s ease-in;
+}
+
+header a,
+.tab-content a {
+  background-color: #e50914;
+  transition-duration: 0.2s;
+}
+
+header a:hover,
+header button:hover,
+.tab-content a:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 70vh;
+  background: url("src/assets/background.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
+}
+
+header img,
+header > button {
+  position: absolute;
+  z-index: 2;
+}
+
+header img {
+  width: 170px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+header button {
+  width: 80px;
+  height: 30px;
+  margin-top: 40px;
+  margin-right: 50px;
+  right: 0;
+}
+
+.watch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.watch h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.watch h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.watch a {
+  width: 350px;
+  padding: 20px;
+}
+
+.watch span {
+  margin-left: 15px;
+}
+
+/* TabSelection */
+.info {
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  color: #999;
+  background-color: #141414;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs svg {
+  font-size: 50px;
+}
+
+.tabs > div {
+  display: flex;
+  width: 60%;
+}
+
+.tab {
+  padding-top: 40px;
+  text-align: center;
+  width: 33.3%;
+  font-size: 19px;
+  color: #999;
+  z-index: 2;
+}
+
+.tab:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 4px solid #e50914;
+}
+
+.toggleTabsText {
+  display: none;
+}
+
+/* TabOne, TabTwo, TabThree */
+.tab-content {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: black;
+}
+
+.tab-content-1,
+.tab-content-2,
+.tab-content-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab-content-1 a,
+.tab-content-2 a,
+.tab-content-3 a {
+  width: 220px;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+  align-self: center;
+  color: white;
+}
+
+/* TabOne */
+.tab-content-1 div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+.tab-content-1 p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.tab-content-1 img {
+  width: 60%;
+}
+
+/* TabTwo */
+.tab-content-2-container {
+  width: 75%;
+}
+
+.tab-content-2-container > div:first-of-type {
+  margin-bottom: 30px;
+}
+
+.tab-content-2-container > div {
+  width: 85%;
+  margin: auto;
+}
+
+.tab-content-2-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.captionTitle:first-of-type {
+  margin-bottom: 20px;
+}
+
+.captionTitle {
+  font-size: 20px;
+  color: white;
+}
+
+.tab-content-2 img {
+  width: 100%;
+}
+
+.tab-content-2 p {
+  text-align: center;
+}
+
+.captionTitle {
+  margin-bottom: 0;
+}
+
+.captionText {
+  color: #999;
+  margin-bottom: 40px;
+}
+
+/* TabThree */
+.tab-content-3 > p {
+  width: 60%;
+  text-align: center;
+}
+
+/* Table */
+table {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 40px;
+  border-collapse: collapse;
+}
+
+thead {
+  color: white;
+}
+
+tbody td:first-child {
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #222;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+td {
+  width: 50px;
+  font-size: 15px;
+  text-align: center;
+  color: #999;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: #999;
+}
+
+footer p,
+footer a {
+  font-size: 13px;
+}
+
+footer > p {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+footer a {
+  margin-bottom: 10px;
+}
+
+footer a:hover {
+  cursor: pointer;
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 30px;
+  column-gap: 20px;
+  margin-bottom: 10px;
+  width: 70%;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 700px) {
+  /* Header */
+  .watch h1 {
+    font-size: 60px;
+  }
+
+  .watch h2,
+  .watch a {
+    font-size: 24px;
+  }
+
+  .watch a {
+    padding: 25px;
+  }
+
+  /* TabOne */
+  .tab-content-1 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tab-content-1 div {
+    width: 25%;
+    margin-right: 30px;
+  }
+
+  .tab-content-1 p {
+    text-align: left;
+  }
+
+  .tab-content-1 a {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+
+  .tab-content-1 img {
+    width: 30%;
+  }
+
+  /* TabTwo */
+  .tab-content-2-container {
+    width: 90%;
+  }
+
+  .tab-content-2-container > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tab-content-2-container > div:first-of-type a {
+    width: 30%;
+  }
+
+  .tab-content-2 .captionTitle:first-child {
+    width: 60%;
+    text-align: left;
+  }
+
+  .tab-content-2-images div {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 944px) {
+  /* Header */
+  header,
+  header::after {
+    height: 93vh;
+  }
+
+  header img {
+    right: 50%;
+    transform: translate(50%);
+  }
+
+  .watch {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .watch h1 {
+    font-size: 80px;
+  }
+
+  .watch h2,
+  .watch a {
+    font-size: 32px;
+  }
+
+  /* TabSelection */
+  .tabs {
+    height: 165px;
+  }
+
+  .toggleTabsText {
+    display: block;
+  }
+
+  /* TabOne */
+  .tab-content-1 p {
+    font-size: 28px;
+  }
+
+  .tab-content-1 a {
+    align-self: flex-start;
+  }
+
+  /* TabTwo */
+  .tab-content-2 .captionTitle:first-child {
+    font-size: 30px;
+  }
+
+  /* TabThree */
+  .tab-content-3 > p {
+    font-size: 28px;
+  }
+
+  /* Footer */
+  footer > div {
+    grid-template-columns: auto auto auto auto;
+  }
+}
