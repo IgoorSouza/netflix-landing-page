@@ -3,10 +3,10 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   return (
-    <header className="w-screen h-[70vh] bg-[url('src/assets/background.jpg')] bg-cover bg-no-repeat bg-center font-arial lg:h-[93vh] after:content-[''] after:w-full after:h-[70vh] after:absolute after:top-0 after:left-0 after:bg-[#00000099] after:shadow-inner after:lg:h-[93vh]">
+    <header className="w-screen h-[70vh] bg-[url('src/assets/background.jpg')] bg-cover bg-no-repeat bg-center font-arial lg:h-[93vh] after:content-[''] after:w-full after:h-[70vh] after:absolute after:top-0 after:left-0 after:bg-black/60 after:shadow-inner after:lg:h-[93vh]">
       <img
         src="src/assets/logo.png"
-        className="w-[170px] absolute mt-8 ml-14 lg:ml-0 lg:left-2/4 lg:translate-x-[-50%] z-50"
+        className="w-[170px] absolute mt-8 ml-14 lg:ml-0 lg:left-2/4 lg:-translate-x-1/2 z-50"
       />
       <button className="absolute right-0 py-[3px] px-4 mt-10 mr-12 rounded-[5px] bg-[#e50914] text-white z-50 hover:opacity-[0.9] ease-in duration-200">
         Sign in
